@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighting</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pothos-bg">
+    <!--Navbar is the same-->
+    <nav class="navbar navbar-expand-xl navbar-dark" style="background-color:#118291;">
+        <a class="navbar-brand" style="color: #d4efbd; href="index.html">Houseplants 101</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Growing Mediums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Water and Humidity</a>
+            </li>
+            <!--other than on this page the "Lighting" page link is the active one-->
+            <li class="nav-item active">
+                <a class="nav-link" href="page4.html">Lighting</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <!--class makes the container the full width of the page. I gave it an id to style it-->
+      <div class="container-fluid" id="light-div">
+        <!--Each row has two columns, one for the text and one for the image-->
+        <div class="row">
+          <div class="col col-md">
+            <h4>Bright Light</h4>
+            <p>The best locations for plants that enjoy bright, direct sunlight, are in front of a south
+            or west facing window. This type of light can burn the leaves of plants that originate from less sunny
+            regions of the world, so it's important to monitor your plants in very bright locations for scorched leaves.
+            If your house doesn't offer a lot of bright sunlight, there are several types of grow lights available for 
+            purchase, so no matter what the natural lighting situation in your home, you can still grow just about an 
+            plant you desire. Some plants that love light are succulents and cacti, crotons, most palm varieties, and the fiddle leaf fig.</p>
+          </div>
+          <div class="col col-md">
+            <!--Images have a class of "img-fluid" so they will be responsive to screen size-->
+            <img class="img-fluid" id="imgs" src="https://platthillnursery.com/wp-content/uploads/2020/02/houseplants-for-sunny-windows-croton-plant-in-sunny-window.jpg" 
+            alt="crotoninwindow">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md">
+            <img class="img-fluid" id="imgs" src="https://www.skh.com/wp-content/uploads/2021/06/image5-1.jpg" alt="mediumlight">
+           
+          </div>
+          <div class="col col-md">
+            <h4>Medium Light</h4>
+            <p>Placements for plants that do well in medium light are in front of an east facing window or near a west facing window. 
+            The vast majority of indoor houseplants are native to rainforests. Having come from rainforest floors where much of the 
+            sunlight is filtered by the tree canopy, means they have not evolved to withstand harsh direct sunlight. We want to do our
+            best to emulate those conditions when growing them indoors. As previously stated, countless popular house plant varieties fall
+            into this category, but some of the most common are monstera, syngonium, pothos, diffenbachia, philodendron, and orchid.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md">
+            <h4>Low Light</h4>
+            <p>If you have plants that prefer low light conditions and want them by a window, a north facing one is ideal. Some species of plants 
+            simply cannot withstand bright light, while others are hardy, adaptable, and are able to make the best of their situation. Many of
+            us have limited sunlight in our home, or are looking to add some natural beauty to a small enclosed space such as a bathroom. If this 
+            sounds familiar and you are not interested in buying grow lights for your plants, then it's recommended you get plants that don't 
+            require lots of light. A few that thrive in low light are the snake plant, peace lily, calathea, ZZ plant, and peperomia.</p>
+          </div>
+          <div class="col col-md">
+            <img class="img-fluid" id="imgs" src="https://bloomscape.com/wp-content/uploads/2020/09/200820_Low-Light-Grouping-dark-e1599072906504.jpg?ver=286233" 
+            alt="lowlight">
+          </div>
+        </div>
+      </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

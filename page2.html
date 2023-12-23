@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing Mediums</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pothos-bg">
+  <!--Navbar is the same as on the home page-->
+    <nav class="navbar navbar-expand-xl navbar-dark" style=background-color:#118291;">
+        <a class="navbar-brand" style="color: #d4efbd; href="index.html">Houseplants 101</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <!--Aside from the fact the active link has been changed to the growing medium page link-->
+            <li class="nav-item active">
+              <a class="nav-link" href="page2.html">Growing Mediums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Water and Humidity</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page4.html">Lighting</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Div holding all the content of the page, with rows and columns inside it utilize bootstrap grid. class=container-fluid means
+      it occupies the full width of the page. Id allows me to style it further-->
+      <div class="container-fluid" id="mediums">
+        <!--the first row and column contain the "intro" of the page-->
+        <div class="row"> 
+          <div class="col">
+          <h3 id="soil-header">Growing Mediums</h3>
+          <p>When it comes to growing mediums, there are lot more options than you may think. I will be touching on just a handful of the
+          most common. Certain plants grow well with different mediums. Of course we all know most plants grow in soil, however, there 
+          are a variety of materials which can be added to the soil to make it fit your specific needs, and some other options that 
+          don't involve any soil at all.</p>
+          </div>
+        </div>
+        <!--the next row has three columns, one for each plant type-->
+        <div class="row">
+          <!--the class makes the page responsive. On large screens each column takes up 1/3 the page width (col-lg-4), but on small 
+          screens each takes up the full width (col-12)-->
+          <div class="col col-lg-4 col-12">
+            <!--each column has a header for the plant type, a photo of that plant type, and a paragraph about that plant types ideal
+            growing medium-->
+            <h4 id="soil-header">Succulents and Cacti</h4> <br>
+            <img class="img-fluid" src="Screenshot 2023-12-23 at 1.47.51 PM.png" alt="succulent"> <br>
+            <p>Succulents and cacti require very well-draining potting mixture. In nature, they are typically found in gravelly or sandy soil.
+              When growing these plants indoors, we want to mimic their natural environment with a gritty, fast-draining soil mixture.
+              Perlite and pumice are often added to achieve this. If their growing medium does not provide adquate drainage, these types
+              of plants are prone to root rot. Pots with drainage holes are strongly recommended. Using a terracotta pot cabable of absorbing
+              excess moisture can also aid in preventing root rot.
+            </p>
+          </div>
+          <div class="col col-lg-4 col-12">
+            <h4 id="soil-header">Tropical Plants</h4> <br>
+            <img class="img-fluid" src="alocasia2.png" alt="Alocasia"> <br>
+            <p>Just as with dry climate plants, well-draining soil is essential for tropical species, too. We also want this mixture to be
+              able to retain water without becoming too heavy. Some additives used to accomplish this are perlite, sphagnum or peat moss, 
+              coconut coir, and LECA (lightweight expanded clay aggregate). LECA has recently been gaining in popularity, while moss has begun
+              to fall out of favor due to the harmful environmental impact of harvesting it. Containers with holes for drainage are preferred, 
+              but if you are working with one that lacks a hole for drainage, it is imperative to create more space within the container by 
+              using a higher ratio of the soil additive of choice. Although it may sound counterintuitive, many tropical plants also do amazingly
+              well when grown hydroponically, that is, just in water. Utilizing a hydroponic setup will spare you the cost of soil, bring an
+              element of uniqueness, and allow you to see the gorgeous root systems.</p>
+          </div>
+          <div class="col col-lg-4 col-12">
+            <h4 id="soil-header">Orchids</h4> <br>
+            <img class="img-fluid" height="200px" src="orchid2.png" alt="orchid"> <br>
+            <p>Orchids have very specific needs. They are epiphytes, meaning they actually grow on trees in the wild, rather than in the ground.
+              Because of this, their roots have evolved to love air, therefore they do not take well to regular soil, which is far too compact 
+              for them. It is crucial to use bark, coconut husk, sphagnum moss, or a combination of these mediums to provide plenty of air circulation
+              and gaps for the roots to grow. In fact, orchids like air <i>so much</i>, they can even grow without being potted at all. Many 
+              people choose to hang their orchids from a ceiling, with the roots dangling. Special orchid pots are available, that are made with 
+              slits or holes along the side for optimal air flow.</p>
+          </div>
+        </div>
+      </div>
+  
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

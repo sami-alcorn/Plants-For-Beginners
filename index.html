@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--the body class allowed me to use an image for the background-->
+<body class="pothos-bg">
+  <!-- responside navbar, shows expanded version on medium size screens or larger. Background color and "brand" color have been
+  changed. -->
+    <nav class="navbar navbar-expand-md navbar-dark" style=background-color:#118291;">
+        <a class="navbar-brand" style="color: #d4efbd; href="index.html">Houseplants 101</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Shows drop down "hamburger" on small screens-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!--list of nav links-->
+          <ul class="navbar-nav">
+            <!--Changes the look of the active page. For this page it is the "home" link, changes respective to each page-->
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Growing Mediums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Water and Humidity</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page4.html">Lighting</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Main div explaining the website; it has a header and paragraph. Class is container rather than container-fluid so
+      it doesn't take up full width of the page. I gave it an id so I could style it with my own CSS-->
+        <div class="container" id="home-div">
+        <h2>Welcome to the Wonderful World of Houseplants!</h2>
+        <p>We all know that plants are a great way to beautify your home, or virtually any other indoor space.
+        Aside from providing a pleasing aesthetic, plants also help purify the air around them, but their 
+        benefits extend far beyond that. Caring for plants can teach us patience, add healthy routine to our 
+        lives, decrease anxiety, and offer us a sense of pride and accomplishment as we watch them flourish.
+        Despite their many virtues, plants can also be intimidating to some people. With countless species
+        available, each with its own unique care requirements, knowing where to start and deciding which 
+        plants are right for you can be overwhelming. If you are just getting started on your plant journey
+        and are looking for a bit of guidance, then this is the site for you! 
+         </p>
+    </div>  
+    <!--Table is unfortunately only responsive up to a point. It behaves appropriately until screen gets to medium 
+    size and then doesn't shrink any more after that. I tried many things to get it to work properly but was 
+    unsuccessful. It has an id for me to style it more.-->
+    <div class="container" class="table-responsive">
+    <table class="table table-bordered" id="table">
+        <thead>
+            <tr>
+                <th colspan="7" style="text-align: center;">Popular Plants at a Glance</th>
+              </tr>  
+        </thead>
+        <tbody>
+          <tr>
+            <th>Plant Species</th>
+            <td>Pothos</td>
+            <td>Snake Plant</td>
+            <td>Orchid</td>
+            <td>Monstera</td>
+            <td>Alocasia</td>
+            <td>Calathea</td>
+          </tr>
+          <tr>
+            <th>Experience Level</th>
+            <td>Novice</td>
+            <td>Novice</td>
+            <td>Intermediate</td>
+            <td>Intermediate</td>
+            <td>Expert</td>
+            <td>Expert</td>
+          </tr>
+          <tr>
+            <th>Average Cost</th>
+            <td>$</td>
+            <td>$</td>
+            <td>$$</td>
+            <td>$$$</td>
+            <td>$$$</td>
+            <td>$$</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   <!--Form also has container class so it doesn't take up the full page width-->
+    <form  class="container">
+      <p class="form-par">Sign up for our monthly newsletter to get helpful tips, and learn all about our featured plant of the month!</p>
+      <!--I know in line CSS is typically frowned upon but for this specific thing it just seemed easier to center the content inline-->
+      <div class="row justify-content-center">
+        <!--Name input box. The class makes it responsive the size of the sreen-->
+        <label for="name-input" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-4">
+          <input type="name" class="form-control" id="name-input">
+        </div>
+      </div>
+      <div  class="row justify-content-center">
+        <!--Email input box. The class makes it responsive the size of the sreen-->
+        <label for="email-input" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="email-input">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-2">Sign Up</div>
+        <div class="col-sm-4">
+          <!--This dispays a checkbox the user to select if they want to sign up for the newsletter -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              I would like to receive more plant content!
+            </label>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-sm-4">
+          <!--submit button-->
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </form>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

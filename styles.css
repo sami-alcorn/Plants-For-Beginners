@@ -1,0 +1,66 @@
+/*This tells the background image how to behave. I wanted it to take up the entire space, be centered, and not repeat*/
+.pothos-bg {
+    background-image: url(pothos2.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*This changes the text color and background color of the form, adds a border, and adds padding*/
+form {
+    display: grid;
+    background-color: #d4efbd;
+    padding: 8px;
+    color: #118291;
+    border:3px; 
+    border-style:solid; 
+    border-radius: 10px; 
+    border-color: #118291;
+}
+/*centers the text of the form*/
+.form-par {
+    text-align: center;
+}
+/*Changes the text color and background color of the div, adds a border and adds a margin*/
+#home-div {
+    background-color:#d4efbd; 
+    border:3px; 
+    border-style:solid; 
+    border-radius: 10px; 
+    border-color: #118291; 
+    margin-top: 10px;
+    color: #118291;
+}
+/*syles the text color and background color of the table and positions the text within each cell*/
+#table {
+    margin-top: 10px;
+    color: aliceblue;
+    background-color:#118291;
+    border-spacing: 5px;
+    text-align: center;
+}
+/*alters the text and background colors of the button on the form*/
+.btn {
+    background-color: #118291;
+    color: aliceblue;
+}
+/*background color for the div on the lighting page*/
+#light-div {
+    background-color: #d4efbd;
+}  
+/*adds a top margin to the images on the lighting page*/
+#imgs {
+    margin-top: 10px;
+}
+/*adds a top margin to the h3 and h4 headers and paragraphs, changes text color*/
+h3, h4, p {
+    margin-top: 10px;
+    color: #118291;
+}
+/*background color for the div on the mediums page*/
+#mediums {
+   background-color: #d4efbd;
+}
+/*centers this specifc header*/
+#soil-header {
+    text-align: center;
+}
